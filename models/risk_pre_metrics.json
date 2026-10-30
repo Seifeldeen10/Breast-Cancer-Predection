@@ -1,0 +1,185 @@
+{
+  "logistic_regression": {
+    "accuracy": 0.8751666666666666,
+    "balanced_accuracy": 0.8657432388400131,
+    "macro_f1": 0.8688093727409084,
+    "precision_per_class": [
+      0.913232104121475,
+      0.9244712990936556,
+      0.7821229050279329
+    ],
+    "recall_per_class": [
+      0.842,
+      0.9272727272727272,
+      0.8279569892473119
+    ],
+    "confusion_matrix": [
+      [
+        1263,
+        0,
+        237
+      ],
+      [
+        0,
+        2448,
+        192
+      ],
+      [
+        120,
+        200,
+        1540
+      ]
+    ],
+    "class_labels": [
+      "High",
+      "Low",
+      "Moderate"
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.8835,
+    "balanced_accuracy": 0.8769574780058651,
+    "macro_f1": 0.8783336933405116,
+    "precision_per_class": [
+      0.9224011713030746,
+      0.9539499801508535,
+      0.774468085106383
+    ],
+    "recall_per_class": [
+      0.84,
+      0.9102272727272728,
+      0.8806451612903226
+    ],
+    "confusion_matrix": [
+      [
+        1260,
+        0,
+        240
+      ],
+      [
+        0,
+        2403,
+        237
+      ],
+      [
+        106,
+        116,
+        1638
+      ]
+    ],
+    "class_labels": [
+      "High",
+      "Low",
+      "Moderate"
+    ]
+  },
+  "selected_model": "random_forest",
+  "selected_metrics": {
+    "accuracy": 0.8835,
+    "balanced_accuracy": 0.8769574780058651,
+    "macro_f1": 0.8783336933405116,
+    "precision_per_class": [
+      0.9224011713030746,
+      0.9539499801508535,
+      0.774468085106383
+    ],
+    "recall_per_class": [
+      0.84,
+      0.9102272727272728,
+      0.8806451612903226
+    ],
+    "confusion_matrix": [
+      [
+        1260,
+        0,
+        240
+      ],
+      [
+        0,
+        2403,
+        237
+      ],
+      [
+        106,
+        116,
+        1638
+      ]
+    ],
+    "class_labels": [
+      "High",
+      "Low",
+      "Moderate"
+    ]
+  },
+  "feature_columns": [
+    "Age",
+    "Gender",
+    "Height_cm",
+    "Weight_kg",
+    "BMI",
+    "Menopausal_Status",
+    "Age_First_Menstruation",
+    "Age_First_Pregnancy",
+    "Parity",
+    "Breastfeeding_History",
+    "Family_History",
+    "BRCA_Mutation",
+    "Previous_Benign_Breast_Disease",
+    "Hormone_Replacement_Therapy",
+    "Oral_Contraceptive_Use",
+    "Smoking_Status",
+    "Alcohol_Intake",
+    "Physical_Activity",
+    "Diet_Quality",
+    "Sleep_Hours",
+    "Stress_Level",
+    "Diabetes",
+    "Hypertension",
+    "Breast_Density",
+    "Previous_Radiation_Exposure",
+    "Estrogen_Level",
+    "Progesterone_Level",
+    "CA15_3",
+    "CEA_Level",
+    "Genomic_Risk_Score"
+  ],
+  "numeric_features": [
+    "Age",
+    "Height_cm",
+    "Weight_kg",
+    "BMI",
+    "Age_First_Menstruation",
+    "Age_First_Pregnancy",
+    "Parity",
+    "Sleep_Hours",
+    "Estrogen_Level",
+    "Progesterone_Level",
+    "CA15_3",
+    "CEA_Level",
+    "Genomic_Risk_Score"
+  ],
+  "categorical_features": [
+    "Gender",
+    "Menopausal_Status",
+    "Breastfeeding_History",
+    "Family_History",
+    "BRCA_Mutation",
+    "Previous_Benign_Breast_Disease",
+    "Hormone_Replacement_Therapy",
+    "Oral_Contraceptive_Use",
+    "Smoking_Status",
+    "Alcohol_Intake",
+    "Physical_Activity",
+    "Diet_Quality",
+    "Stress_Level",
+    "Diabetes",
+    "Hypertension",
+    "Breast_Density",
+    "Previous_Radiation_Exposure"
+  ],
+  "random_state": 42,
+  "train_test_split": {
+    "test_size": 0.2,
+    "stratify": true
+  }
+}

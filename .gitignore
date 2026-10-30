@@ -68,4 +68,6 @@ reports/*.pdf
 *.key
 *.pem
 *.crt
-models/
+models/*
+!models/risk_pre_pipeline.pkl
+!models/risk_pre_metrics.json
