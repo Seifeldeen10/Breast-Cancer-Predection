@@ -1,0 +1,267 @@
+# Data Audit Report for `BCRSD_30K.csv`
+
+**Rows:** 30000, **Columns:** 47  
+
+## Column Overview
+- `Patient_ID`: object
+- `Age`: int64
+- `Gender`: object
+- `Height_cm`: float64
+- `Weight_kg`: float64
+- `BMI`: float64
+- `Menopausal_Status`: object
+- `Age_First_Menstruation`: int64
+- `Age_First_Pregnancy`: int64
+- `Parity`: int64
+- `Breastfeeding_History`: object
+- `Family_History`: object
+- `BRCA_Mutation`: object
+- `Previous_Benign_Breast_Disease`: object
+- `Hormone_Replacement_Therapy`: object
+- `Oral_Contraceptive_Use`: object
+- `Smoking_Status`: object
+- `Alcohol_Intake`: object
+- `Physical_Activity`: object
+- `Diet_Quality`: object
+- `Sleep_Hours`: float64
+- `Stress_Level`: object
+- `Diabetes`: object
+- `Hypertension`: object
+- `Breast_Density`: object
+- `Previous_Radiation_Exposure`: object
+- `Age_Menopause`: int64
+- `Estrogen_Level`: float64
+- `Progesterone_Level`: float64
+- `CA15_3`: float64
+- `CEA_Level`: float64
+- `Tumor_Size_mm`: int64
+- `Tumor_Location`: object
+- `Tumor_Shape`: object
+- `Tumor_Margin`: object
+- `Calcification`: object
+- `Lymph_Node_Involvement`: int64
+- `Mammography_BIRADS`: int64
+- `Ultrasound_Result`: object
+- `MRI_Result`: object
+- `Ki67_Index`: float64
+- `HER2_Status`: object
+- `ER_Status`: object
+- `PR_Status`: object
+- `Genomic_Risk_Score`: float64
+- `Breast_Cancer_Risk`: object
+- `Cancer_Severity`: object
+
+## Missing Values
+- `Alcohol_Intake`: 13536 missing (45.12%)
+- `Calcification`: 14104 missing (47.01%)
+
+## Duplicate Rows
+- 0 duplicate rows detected
+
+## Categorical Columns Summary
+- `Patient_ID`: 30000 unique values (sample: PT_00001, PT_00002, PT_00003, PT_00004, PT_00005, PT_00006, PT_00007, PT_00008, PT_00009, PT_00010, PT_00011, PT_00012, PT_00013, PT_00014, PT_00015, PT_00016, PT_00017, PT_00018, PT_00019, PT_00020)
+- `Gender`: 2 unique values (sample: Female, Male)
+- `Menopausal_Status`: 2 unique values (sample: Post, Pre)
+- `Breastfeeding_History`: 5 unique values (sample: Not Applicable, Long (>12 months), No, Short (<6 months), Moderate (6-12 months))
+- `Family_History`: 2 unique values (sample: Yes, No)
+- `BRCA_Mutation`: 2 unique values (sample: Yes, No)
+- `Previous_Benign_Breast_Disease`: 2 unique values (sample: No, Yes)
+- `Hormone_Replacement_Therapy`: 2 unique values (sample: Yes, No)
+- `Oral_Contraceptive_Use`: 2 unique values (sample: No, Yes)
+- `Smoking_Status`: 3 unique values (sample: Never, Current, Former)
+- `Alcohol_Intake`: 3 unique values (sample: Moderate, Low, High)
+- `Physical_Activity`: 3 unique values (sample: Moderate, Low, High)
+- `Diet_Quality`: 3 unique values (sample: Poor, Fair, Good)
+- `Stress_Level`: 3 unique values (sample: Low, Moderate, High)
+- `Diabetes`: 2 unique values (sample: No, Yes)
+- `Hypertension`: 2 unique values (sample: No, Yes)
+- `Breast_Density`: 4 unique values (sample: A, B, C, D)
+- `Previous_Radiation_Exposure`: 2 unique values (sample: No, Yes)
+- `Tumor_Location`: 6 unique values (sample: Upper Outer Quadrant, Not Applicable, Lower Inner Quadrant, Lower Outer Quadrant, Upper Inner Quadrant, Subareolar)
+- `Tumor_Shape`: 4 unique values (sample: Irregular, Not Applicable, Round, Oval)
+- `Tumor_Margin`: 6 unique values (sample: Spiculated, Not Applicable, Microlobulated, Obscured, Ill-defined, Circumscribed)
+- `Calcification`: 4 unique values (sample: Fine Linear, Coarse Popcorn, Pleomorphic, Amorphous)
+- `Ultrasound_Result`: 4 unique values (sample: Highly Suggestive of Malignancy, Normal, Suspicious, Benign)
+- `MRI_Result`: 4 unique values (sample: Highly Suggestive of Malignancy, Normal, Suspicious, Benign)
+- `HER2_Status`: 3 unique values (sample: Positive, Not Applicable, Negative)
+- `ER_Status`: 3 unique values (sample: Positive, Not Applicable, Negative)
+- `PR_Status`: 3 unique values (sample: Positive, Not Applicable, Negative)
+- `Breast_Cancer_Risk`: 3 unique values (sample: High, Moderate, Low)
+- `Cancer_Severity`: 5 unique values (sample: Stage IV, No Cancer, Stage I, Stage II, Stage III)
+
+## Numerical Columns Summary
+- `Age`: count=30000, mean=52.5351, std=11.8277, min=25.0, 25%=44.0, 50%=53.0, 75%=61.0, max=85.0
+- `Height_cm`: count=30000, mean=161.1432, std=6.1735, min=134.2, 25%=157.0, 50%=161.1, 75%=165.2, max=195.3
+- `Weight_kg`: count=30000, mean=68.7701, std=13.5439, min=34.2, 25%=59.1, 50%=67.5, 75%=77.0, max=143.3
+- `BMI`: count=30000, mean=26.4425, std=4.7723, min=16.0, 25%=23.08, 50%=26.02, 75%=29.36, max=48.0
+- `Age_First_Menstruation`: count=30000, mean=12.0012, std=1.2268, min=9.0, 25%=11.0, 50%=12.0, 75%=13.0, max=17.0
+- `Age_First_Pregnancy`: count=30000, mean=19.5027, std=10.6503, min=0.0, 25%=17.0, 50%=23.0, 75%=27.0, max=41.0
+- `Parity`: count=30000, mean=1.4839, std=1.0745, min=0.0, 25%=1.0, 50%=1.0, 75%=2.0, max=4.0
+- `Sleep_Hours`: count=30000, mean=6.9913, std=1.0031, min=4.0, 25%=6.3, 50%=7.0, 75%=7.7, max=10.0
+- `Age_Menopause`: count=30000, mean=30.3393, std=24.3241, min=0.0, 25%=0.0, 50%=46.0, 75%=50.0, max=63.0
+- `Estrogen_Level`: count=30000, mean=52.08, std=53.9524, min=5.0, 25%=14.1, 50%=18.6, 75%=94.1, max=279.9
+- `Progesterone_Level`: count=30000, mean=2.2544, std=2.9947, min=0.05, 25%=0.18, 50%=0.27, 75%=4.56, max=14.12
+- `CA15_3`: count=30000, mean=43.1662, std=40.6709, min=5.0, 25%=18.8, 50%=29.0, 75%=47.3, max=250.0
+- `CEA_Level`: count=30000, mean=8.9181, std=10.5929, min=0.1, 25%=2.4, 50%=4.7, 75%=10.8, max=60.0
+- `Tumor_Size_mm`: count=30000, mean=24.0663, std=33.1618, min=0.0, 25%=0.0, 50%=9.0, 75%=37.0, max=150.0
+- `Lymph_Node_Involvement`: count=30000, mean=2.9456, std=4.9912, min=0.0, 25%=0.0, 50%=0.0, 75%=4.0, max=25.0
+- `Mammography_BIRADS`: count=30000, mean=3.4634, std=1.6541, min=1.0, 25%=2.0, 50%=4.0, 75%=5.0, max=6.0
+- `Ki67_Index`: count=30000, mean=23.6404, std=22.4447, min=1.0, 25%=5.5, 50%=16.5, 75%=34.7, max=95.0
+- `Genomic_Risk_Score`: count=30000, mean=30.5891, std=23.0985, min=0.0, 25%=12.7, 50%=22.8, 75%=43.2, max=100.0
+
+## Candidate Target Distributions (Low‑cardinality columns)
+- `Gender` distribution:
+  - Female: 29752
+  - Male: 248
+- `Menopausal_Status` distribution:
+  - Post: 18373
+  - Pre: 11627
+- `Age_First_Menstruation` distribution:
+  - 12: 9752
+  - 11: 7015
+  - 13: 6911
+  - 14: 2628
+  - 10: 2562
+  - 9: 571
+  - 15: 523
+  - 16: 37
+  - 17: 1
+- `Parity` distribution:
+  - 2: 10312
+  - 1: 9140
+  - 0: 6134
+  - 3: 2903
+  - 4: 1511
+- `Breastfeeding_History` distribution:
+  - Moderate (6-12 months): 9533
+  - Short (<6 months): 8437
+  - Not Applicable: 6134
+  - No: 3598
+  - Long (>12 months): 2298
+- `Family_History` distribution:
+  - No: 25581
+  - Yes: 4419
+- `BRCA_Mutation` distribution:
+  - No: 29370
+  - Yes: 630
+- `Previous_Benign_Breast_Disease` distribution:
+  - No: 24543
+  - Yes: 5457
+- `Hormone_Replacement_Therapy` distribution:
+  - No: 25475
+  - Yes: 4525
+- `Oral_Contraceptive_Use` distribution:
+  - No: 18620
+  - Yes: 11380
+- `Smoking_Status` distribution:
+  - Never: 17894
+  - Former: 7579
+  - Current: 4527
+- `Alcohol_Intake` distribution:
+  - nan: 13536
+  - Low: 10429
+  - Moderate: 4552
+  - High: 1483
+- `Physical_Activity` distribution:
+  - Moderate: 13639
+  - Low: 11816
+  - High: 4545
+- `Diet_Quality` distribution:
+  - Fair: 15056
+  - Poor: 7493
+  - Good: 7451
+- `Stress_Level` distribution:
+  - Moderate: 15026
+  - Low: 8962
+  - High: 6012
+- `Diabetes` distribution:
+  - No: 26819
+  - Yes: 3181
+- `Hypertension` distribution:
+  - No: 23626
+  - Yes: 6374
+- `Breast_Density` distribution:
+  - B: 12042
+  - C: 11982
+  - A: 2998
+  - D: 2978
+- `Previous_Radiation_Exposure` distribution:
+  - No: 29413
+  - Yes: 587
+- `Tumor_Location` distribution:
+  - Not Applicable: 12300
+  - Upper Outer Quadrant: 8788
+  - Upper Inner Quadrant: 2685
+  - Lower Outer Quadrant: 2653
+  - Lower Inner Quadrant: 1819
+  - Subareolar: 1755
+- `Tumor_Shape` distribution:
+  - Not Applicable: 12300
+  - Irregular: 11380
+  - Oval: 4639
+  - Round: 1681
+- `Tumor_Margin` distribution:
+  - Not Applicable: 12300
+  - Spiculated: 6136
+  - Ill-defined: 4461
+  - Microlobulated: 3070
+  - Obscured: 2976
+  - Circumscribed: 1057
+- `Calcification` distribution:
+  - nan: 14104
+  - Pleomorphic: 6023
+  - Fine Linear: 5133
+  - Amorphous: 3758
+  - Coarse Popcorn: 982
+- `Mammography_BIRADS` distribution:
+  - 5: 8700
+  - 4: 6900
+  - 1: 5609
+  - 2: 5480
+  - 6: 2100
+  - 3: 1211
+- `Ultrasound_Result` distribution:
+  - Highly Suggestive of Malignancy: 10800
+  - Normal: 9867
+  - Suspicious: 6900
+  - Benign: 2433
+- `MRI_Result` distribution:
+  - Highly Suggestive of Malignancy: 10800
+  - Normal: 10434
+  - Suspicious: 6900
+  - Benign: 1866
+- `HER2_Status` distribution:
+  - Negative: 13344
+  - Not Applicable: 12300
+  - Positive: 4356
+- `ER_Status` distribution:
+  - Positive: 13238
+  - Not Applicable: 12300
+  - Negative: 4462
+- `PR_Status` distribution:
+  - Not Applicable: 12300
+  - Positive: 11204
+  - Negative: 6496
+- `Breast_Cancer_Risk` distribution:
+  - Low: 13200
+  - Moderate: 9300
+  - High: 7500
+- `Cancer_Severity` distribution:
+  - No Cancer: 12300
+  - Stage I: 6900
+  - Stage II: 5100
+  - Stage III: 3600
+  - Stage IV: 2100
+
+## Flags for Manual Review
+- Potential identifier columns: Patient_ID
+
+## Provenance & License
+- Source: unknown (to be filled after manual inspection)
+- License: unknown
+
+
+## Suitability Assessment
+- Risk modeling: **requires further investigation**
+- Stage modeling: **requires further investigation**
+- Exploratory analysis: **possible**

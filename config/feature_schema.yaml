@@ -1,0 +1,129 @@
+# Feature schema for the Breast Cancer Risk prototype (pre‑diagnosis only)
+# Only features that are known before any imaging or tumor measurement are included.
+# The values listed under `allowed_values` are illustrative; the UI will accept any
+# value present in the original dataset for categorical fields and any numeric
+# value within a reasonable range (no hard bounds enforced).
+
+features:
+  Age:
+    type: numeric
+    unit: years
+    description: Patient age at the time of data collection.
+
+  Gender:
+    type: categorical
+    allowed_values: ["Male", "Female"]
+    description: Self‑reported gender.
+
+  Height_cm:
+    type: numeric
+    unit: cm
+    description: Height in centimeters.
+
+  Weight_kg:
+    type: numeric
+    unit: kg
+    description: Weight in kilograms.
+
+  BMI:
+    type: numeric
+    description: Body‑mass index (kg/m²).
+
+  Menopausal_Status:
+    type: categorical
+    allowed_values: []  # Filled at runtime from dataset (Pre, Post, etc.)
+    description: Menopausal status.
+
+  Age_First_Menstruation:
+    type: numeric
+    unit: years
+    description: Age of first menstruation (if applicable).
+
+  Age_First_Pregnancy:
+    type: numeric
+    unit: years
+    description: Age at first pregnancy (if applicable).
+
+  Parity:
+    type: numeric
+    description: Number of births.
+
+  Breastfeeding_History:
+    type: categorical
+    allowed_values: []
+    description: Breastfeeding duration category.
+
+  Family_History:
+    type: categorical
+    allowed_values: []
+    description: Presence of family history of breast cancer.
+
+  BRCA_Mutation:
+    type: categorical
+    allowed_values: []
+    description: BRCA genetic mutation status.
+
+  Previous_Benign_Breast_Disease:
+    type: categorical
+    allowed_values: []
+    description: History of benign breast disease.
+
+  Hormone_Replacement_Therapy:
+    type: categorical
+    allowed_values: []
+    description: Use of hormone replacement therapy.
+
+  Oral_Contraceptive_Use:
+    type: categorical
+    allowed_values: []
+    description: Use of oral contraceptives.
+
+  Smoking_Status:
+    type: categorical
+    allowed_values: []
+    description: Smoking status (Never, Former, Current).
+
+  Alcohol_Intake:
+    type: categorical
+    allowed_values: []
+    description: Reported alcohol consumption level.
+
+  Physical_Activity:
+    type: categorical
+    allowed_values: []
+    description: Physical activity level.
+
+  Diet_Quality:
+    type: categorical
+    allowed_values: []
+    description: Self‑reported diet quality.
+
+  Sleep_Hours:
+    type: numeric
+    unit: hours
+    description: Average nightly sleep duration.
+
+  Stress_Level:
+    type: categorical
+    allowed_values: []
+    description: Self‑reported stress level.
+
+  Diabetes:
+    type: categorical
+    allowed_values: []
+    description: Diabetes diagnosis (Yes/No).
+
+  Hypertension:
+    type: categorical
+    allowed_values: []
+    description: Hypertension diagnosis (Yes/No).
+
+  Breast_Density:
+    type: categorical
+    allowed_values: []
+    description: Mammographic breast density category.
+
+  Previous_Radiation_Exposure:
+    type: categorical
+    allowed_values: []
+    description: Prior radiation exposure to the breast area.

@@ -1,0 +1,55 @@
+risk_prediction:
+  patient_info:
+    - patient_id  # candidate identifier (to be excluded from modeling)
+    - age
+    - sex
+    - ethnicity
+  hormonal:
+    - menopause_status
+    - hormone_replacement_therapy
+  reproductive:
+    - parity
+    - age_at_first_birth
+    - breastfeeding_duration
+  genetic_familial:
+    - family_history_breast_cancer
+    - brca1_mutation_status
+    - brca2_mutation_status
+  lifestyle:
+    - smoking_status
+    - alcohol_consumption
+    - physical_activity_level
+    - bmi
+  medical:
+    - comorbidities
+    - previous_biopsies
+    - hormone_levels
+  imaging:
+    - mammography_density
+    - ultrasound_findings
+    - mri_findings
+  tumor_characteristics:
+    - tumor_size
+    - histological_type
+    - grade
+    - lymph_node_status
+    - receptor_status
+    - ki67_index
+
+stage_prediction:
+  patient_info:
+    - patient_id
+    - age
+    - sex
+  tumor_characteristics:
+    - tumor_size
+    - histological_type
+    - grade
+    - lymph_node_status
+    - receptor_status
+    - ki67_index
+    - stage  # candidate target for stage prediction
+  imaging:
+    - mammography_density
+    - ultrasound_findings
+    - mri_findings

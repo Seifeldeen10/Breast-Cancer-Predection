@@ -1,0 +1,397 @@
+{
+  "shape": {
+    "rows": 5000,
+    "columns": 23
+  },
+  "columns": [
+    "Age",
+    "Residence_Location",
+    "Alcohol_Intake",
+    "Smoking_Status",
+    "Family_History_of_Breast_Cancer",
+    "Number_of_Children",
+    "Age_at_Menarche",
+    "Menopausal_Status",
+    "Hormone_Replacement_Therapy_Use",
+    "Oral_Contraceptive_Use",
+    "Tumor_Size_mm",
+    "Lymph_Node_Status",
+    "Breast_Pain",
+    "Breast_Lump",
+    "Breast_Biopsy",
+    "Genetic_Mutation",
+    "Hormone_Receptor_Status",
+    "Diagnosis_Status",
+    "Metastasis_Status",
+    "Cancer_Stage",
+    "Treatment",
+    "Survival_Status",
+    "Follow_Up_Duration_months"
+  ],
+  "dtypes": {
+    "Age": "int64",
+    "Residence_Location": "int64",
+    "Alcohol_Intake": "int64",
+    "Smoking_Status": "int64",
+    "Family_History_of_Breast_Cancer": "int64",
+    "Number_of_Children": "int64",
+    "Age_at_Menarche": "int64",
+    "Menopausal_Status": "int64",
+    "Hormone_Replacement_Therapy_Use": "int64",
+    "Oral_Contraceptive_Use": "int64",
+    "Tumor_Size_mm": "int64",
+    "Lymph_Node_Status": "int64",
+    "Breast_Pain": "int64",
+    "Breast_Lump": "int64",
+    "Breast_Biopsy": "int64",
+    "Genetic_Mutation": "object",
+    "Hormone_Receptor_Status": "int64",
+    "Diagnosis_Status": "object",
+    "Metastasis_Status": "int64",
+    "Cancer_Stage": "object",
+    "Treatment": "object",
+    "Survival_Status": "object",
+    "Follow_Up_Duration_months": "int64"
+  },
+  "missing": {
+    "Cancer_Stage": {
+      "count": 370,
+      "percent": 7.4
+    }
+  },
+  "duplicate_rows": 0,
+  "categorical": {
+    "Genetic_Mutation": {
+      "unique_count": 3,
+      "unique_values": [
+        "BRCA2",
+        "BRCA1",
+        "Others"
+      ]
+    },
+    "Diagnosis_Status": {
+      "unique_count": 2,
+      "unique_values": [
+        "Malignant",
+        "Benign"
+      ]
+    },
+    "Cancer_Stage": {
+      "unique_count": 4,
+      "unique_values": [
+        "Stage II",
+        "Stage III",
+        "Stage IV",
+        "Stage I"
+      ]
+    },
+    "Treatment": {
+      "unique_count": 8,
+      "unique_values": [
+        "Surgery + Radiation",
+        "Chemotherapy + Hormone Therapy",
+        "PARP Inhibitors + Chemotherapy",
+        "Surgery + Hormone Therapy (Tamoxifen)",
+        "Chemotherapy + Surgery",
+        "Chemotherapy + Targeted Therapy",
+        "Surgery + Hormone Therapy (Aromatase Inhibitors)",
+        "Regular Monitoring or Minor Surgery"
+      ]
+    },
+    "Survival_Status": {
+      "unique_count": 2,
+      "unique_values": [
+        "Deceased",
+        "Alive"
+      ]
+    }
+  },
+  "numerical": {
+    "Age": {
+      "count": 5000,
+      "mean": 54.4784,
+      "std": 20.0917,
+      "min": 20.0,
+      "25%": 37.0,
+      "50%": 54.0,
+      "75%": 72.0,
+      "max": 89.0
+    },
+    "Residence_Location": {
+      "count": 5000,
+      "mean": 1.9804,
+      "std": 0.8137,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 3.0
+    },
+    "Alcohol_Intake": {
+      "count": 5000,
+      "mean": 0.5032,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Smoking_Status": {
+      "count": 5000,
+      "mean": 0.501,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Family_History_of_Breast_Cancer": {
+      "count": 5000,
+      "mean": 0.5038,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Number_of_Children": {
+      "count": 5000,
+      "mean": 2.4712,
+      "std": 1.7087,
+      "min": 0.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 4.0,
+      "max": 5.0
+    },
+    "Age_at_Menarche": {
+      "count": 5000,
+      "mean": 13.583,
+      "std": 2.2645,
+      "min": 10.0,
+      "25%": 12.0,
+      "50%": 14.0,
+      "75%": 16.0,
+      "max": 17.0
+    },
+    "Menopausal_Status": {
+      "count": 5000,
+      "mean": 0.4836,
+      "std": 0.4998,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Hormone_Replacement_Therapy_Use": {
+      "count": 5000,
+      "mean": 0.492,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Oral_Contraceptive_Use": {
+      "count": 5000,
+      "mean": 0.5028,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Tumor_Size_mm": {
+      "count": 5000,
+      "mean": 50.4364,
+      "std": 28.4532,
+      "min": 1.0,
+      "25%": 26.0,
+      "50%": 51.0,
+      "75%": 75.0,
+      "max": 99.0
+    },
+    "Lymph_Node_Status": {
+      "count": 5000,
+      "mean": 0.5132,
+      "std": 0.4999,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Breast_Pain": {
+      "count": 5000,
+      "mean": 0.5064,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Breast_Lump": {
+      "count": 5000,
+      "mean": 0.5014,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Breast_Biopsy": {
+      "count": 5000,
+      "mean": 0.4902,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Hormone_Receptor_Status": {
+      "count": 5000,
+      "mean": 0.4996,
+      "std": 0.5,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "Metastasis_Status": {
+      "count": 5000,
+      "mean": 0.1008,
+      "std": 0.3011,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "Follow_Up_Duration_months": {
+      "count": 5000,
+      "mean": 60.2358,
+      "std": 34.6907,
+      "min": 1.0,
+      "25%": 29.0,
+      "50%": 60.0,
+      "75%": 91.0,
+      "max": 119.0
+    }
+  },
+  "candidate_targets": {
+    "Residence_Location": {
+      "1": 1705,
+      "2": 1688,
+      "3": 1607
+    },
+    "Alcohol_Intake": {
+      "1": 2516,
+      "0": 2484
+    },
+    "Smoking_Status": {
+      "1": 2505,
+      "0": 2495
+    },
+    "Family_History_of_Breast_Cancer": {
+      "1": 2519,
+      "0": 2481
+    },
+    "Number_of_Children": {
+      "3": 870,
+      "0": 856,
+      "1": 852,
+      "5": 820,
+      "2": 807,
+      "4": 795
+    },
+    "Age_at_Menarche": {
+      "16": 670,
+      "13": 653,
+      "14": 646,
+      "17": 628,
+      "15": 627,
+      "12": 612,
+      "11": 597,
+      "10": 567
+    },
+    "Menopausal_Status": {
+      "0": 2582,
+      "1": 2418
+    },
+    "Hormone_Replacement_Therapy_Use": {
+      "0": 2540,
+      "1": 2460
+    },
+    "Oral_Contraceptive_Use": {
+      "1": 2514,
+      "0": 2486
+    },
+    "Lymph_Node_Status": {
+      "1": 2566,
+      "0": 2434
+    },
+    "Breast_Pain": {
+      "1": 2532,
+      "0": 2468
+    },
+    "Breast_Lump": {
+      "1": 2507,
+      "0": 2493
+    },
+    "Breast_Biopsy": {
+      "0": 2549,
+      "1": 2451
+    },
+    "Genetic_Mutation": {
+      "BRCA1": 1675,
+      "BRCA2": 1674,
+      "Others": 1651
+    },
+    "Hormone_Receptor_Status": {
+      "0": 2502,
+      "1": 2498
+    },
+    "Diagnosis_Status": {
+      "Malignant": 4630,
+      "Benign": 370
+    },
+    "Metastasis_Status": {
+      "0": 4496,
+      "1": 504
+    },
+    "Cancer_Stage": {
+      "Stage II": 2752,
+      "Stage III": 1062,
+      "Stage IV": 468,
+      "nan": 370,
+      "Stage I": 348
+    },
+    "Treatment": {
+      "Surgery + Radiation": 1567,
+      "Surgery + Hormone Therapy (Aromatase Inhibitors)": 775,
+      "Surgery + Hormone Therapy (Tamoxifen)": 758,
+      "Chemotherapy + Hormone Therapy": 538,
+      "Chemotherapy + Surgery": 524,
+      "Regular Monitoring or Minor Surgery": 370,
+      "PARP Inhibitors + Chemotherapy": 322,
+      "Chemotherapy + Targeted Therapy": 146
+    },
+    "Survival_Status": {
+      "Deceased": 2567,
+      "Alive": 2433
+    }
+  },
+  "flags": [
+    "Potential identifier columns: Residence_Location"
+  ]
+}

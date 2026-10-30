@@ -1,0 +1,35 @@
+# config/pre_risk_features.yaml
+# List of features that are available before any imaging or tumor measurements.
+# These are the approved inputs for the research risk prototype.
+
+pre_risk_features:
+  - Age
+  - Gender
+  - Height_cm
+  - Weight_kg
+  - BMI
+  - Menopausal_Status
+  - Age_First_Menstruation
+  - Age_First_Pregnancy
+  - Parity
+  - Breastfeeding_History
+  - Family_History
+  - BRCA_Mutation
+  - Previous_Benign_Breast_Disease
+  - Hormone_Replacement_Therapy
+  - Oral_Contraceptive_Use
+  - Smoking_Status
+  - Alcohol_Intake
+  - Physical_Activity
+  - Diet_Quality
+  - Sleep_Hours
+  - Stress_Level
+  - Diabetes
+  - Hypertension
+  - Breast_Density
+  - Previous_Radiation_Exposure
+  - Estrogen_Level
+  - Progesterone_Level
+  - CA15_3
+  - CEA_Level
+  - Genomic_Risk_Score
