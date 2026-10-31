@@ -71,3 +71,5 @@ reports/*.pdf
 models/*
 !models/risk_pre_pipeline.pkl
 !models/risk_pre_metrics.json
+First Round Of Ammends.txt
+ 

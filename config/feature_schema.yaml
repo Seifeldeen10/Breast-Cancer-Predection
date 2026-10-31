@@ -12,7 +12,7 @@ features:
 
   Gender:
     type: categorical
-    allowed_values: ["Male", "Female"]
+    allowed_values: ["Female", "Male"]
     description: Self‑reported gender.
 
   Height_cm:
@@ -31,7 +31,7 @@ features:
 
   Menopausal_Status:
     type: categorical
-    allowed_values: []  # Filled at runtime from dataset (Pre, Post, etc.)
+    allowed_values: ["Pre", "Post"]
     description: Menopausal status.
 
   Age_First_Menstruation:
@@ -50,52 +50,52 @@ features:
 
   Breastfeeding_History:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Short (<6 months)", "Moderate (6-12 months)", "Long (>12 months)", "Not Applicable"]
     description: Breastfeeding duration category.
 
   Family_History:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Presence of family history of breast cancer.
 
   BRCA_Mutation:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: BRCA genetic mutation status.
 
   Previous_Benign_Breast_Disease:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: History of benign breast disease.
 
   Hormone_Replacement_Therapy:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Use of hormone replacement therapy.
 
   Oral_Contraceptive_Use:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Use of oral contraceptives.
 
   Smoking_Status:
     type: categorical
-    allowed_values: []
+    allowed_values: ["Never", "Former", "Current"]
     description: Smoking status (Never, Former, Current).
 
   Alcohol_Intake:
     type: categorical
-    allowed_values: []
+    allowed_values: ["Low", "Moderate", "High"]
     description: Reported alcohol consumption level.
 
   Physical_Activity:
     type: categorical
-    allowed_values: []
+    allowed_values: ["Low", "Moderate", "High"]
     description: Physical activity level.
 
   Diet_Quality:
     type: categorical
-    allowed_values: []
+    allowed_values: ["Poor", "Fair", "Good"]
     description: Self‑reported diet quality.
 
   Sleep_Hours:
@@ -105,25 +105,25 @@ features:
 
   Stress_Level:
     type: categorical
-    allowed_values: []
+    allowed_values: ["Low", "Moderate", "High"]
     description: Self‑reported stress level.
 
   Diabetes:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Diabetes diagnosis (Yes/No).
 
   Hypertension:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Hypertension diagnosis (Yes/No).
 
   Breast_Density:
     type: categorical
-    allowed_values: []
+    allowed_values: ["A", "B", "C", "D"]
     description: Mammographic breast density category.
 
   Previous_Radiation_Exposure:
     type: categorical
-    allowed_values: []
+    allowed_values: ["No", "Yes"]
     description: Prior radiation exposure to the breast area.
